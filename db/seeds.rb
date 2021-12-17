@@ -21,12 +21,19 @@ dish2 = Dish.create(name: "Vegan Pasta", intended_to_be: "Spicy", current_price:
 
 puts "Creating ratings..."
 # *****************************************************************
-# * TODO: create ratings! Remember, a review belongs to a dishes *
-# * and a review belongs to an user.                              *
+# * TODO: create ratings! Remember, a rating belongs to a dishes  *
+# * and a rating belongs to an user.                              *
 # *****************************************************************
-# Create Reviews Here
+# Create Ratings Here
 
 
 
 
-puts "🌱 Seeding done! 🌱"
+puts "🌱 Seeding done! 🌱
+
+    ✨👏🏾👏🏾👏🏾✨
+    If You're Reading This: Your're Doing Great! 
+    ✨🙌🏾🙏🏾🙌🏾✨
+
+
+"
