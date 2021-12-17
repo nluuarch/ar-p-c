@@ -12,9 +12,9 @@ user3 = User.create(name: Faker::Name.name)
 # you = User.create(name: "Feel Free To Change This To Your Name")
 
 
-puts "Creating dishess..."
-dish1 = Product.create(name: "Pancakes", intended_to_be: "Sweet", current_price: 10.00)
-dish2 = Product.create(name: "Vegan Pasta", intended_to_be: "Spicy", current_price: 8.88)
+puts "Creating dishes..."
+dish1 = Dish.create(name: "Pancakes", intended_to_be: "Sweet", current_price: 10.00)
+dish2 = Dish.create(name: "Vegan Pasta", intended_to_be: "Spicy", current_price: 8.88)
 
 
 

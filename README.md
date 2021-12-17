@@ -1,12 +1,12 @@
 # Ruby AR Practice Challenge:  Taste_Testers 🍱🍜😋🍲🥗 - 📋🧐📊  
 
 
-For this assignment, we'll be working with an new Restaurant domain. We'll be
+For this assignment, we'll be working with a new Restaurant domain. We'll be
 focusing on the most difficult part of helping this small business start; tasting the food 🍽🧐. 
 
 <!-- Lol 🤣 -->
 
-We will be desinging the database that will soon interface with a frontend for providing this new small business with feeback on their Dishes! 😰👎 / 😋👍
+We will be designing the database that will soon interface with a frontend for providing this new small business with feeback on their Dishes! 😰👎 / 😋👍
 
 
 
@@ -114,7 +114,7 @@ The GOAL is for your schema/tables to look like this:
 | Column | Type    |
 | ------ | ------- |
 | name   | String  |
-| intended_to_be   | String  |
+| intended_to_be   | String |
 | current_price  | Float |
 
 Hmmmm, inquisitive are you 💻🤔; you might notice that there is a table MISSING 🙃.
@@ -230,10 +230,10 @@ dishes for the first user in the database based on your seed data; and
 - `Dish#average_rating`
   - returns a `float` representing the average star rating for all ratings for this dish
   - remember that the average of something is the sum of all the values, divided by the number of values:
-    -- the average of 1,1,1  : (1 + 1 + 1)/3
-    -- the average of 2,2,2  : (2 + 2 + 2)/3
-    -- the average of 3,3,3  : (3 + 3 + 3)/3
-    -- the average of 1,2,3,4: (1 + 2 + 3 + 4)/4
+    - the average of 1,1,1  : (1 + 1 + 1)/3
+    - the average of 2,2,2  : (2 + 2 + 2)/3
+    - the average of 3,3,3  : (3 + 3 + 3)/3
+    - the average of 1,2,3,4: (1 + 2 + 3 + 4)/4
   
 - `User#is_dish_popular`
   - returns `true` if dish has an average score above a 5, or `false` if the dish has an average score above 5
