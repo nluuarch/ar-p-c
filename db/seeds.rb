@@ -1,4 +1,4 @@
-# This will delete any existing rows from the Product and User tables
+# This will delete any existing rows from the Dish and User tables
 # so you can run the seed file multiple times without having duplicate entries in your database
 puts "Deleting old data..."
 Dish.destroy_all
