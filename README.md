@@ -220,7 +220,7 @@ dishes for the first user in the database based on your seed data; and
 
 #### Dish
 
-- `Dish#leave_rating(user, score, reason)`
+- `Dish#leave_rating(user, score, reason, recommended_price)`
   - takes a `User` (an instance of the `User` class), a `score` (integer), and a `reason` (string) as arguments, and creates a new `Rating` in the database associated with this Dish and the User
 
 - `Dish#print_all_ratings`
