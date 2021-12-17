@@ -235,7 +235,7 @@ dishes for the first user in the database based on your seed data; and
     - the average of 3,3,3  : (3 + 3 + 3)/3
     - the average of 1,2,3,4: (1 + 2 + 3 + 4)/4
   
-- `User#is_dish_popular`
+- `Dish#is_dish_popular`
   - returns `true` if dish has an average score above a 5, or `false` if the dish has an average score below 5
 
 
