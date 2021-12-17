@@ -236,7 +236,7 @@ dishes for the first user in the database based on your seed data; and
     - the average of 1,2,3,4: (1 + 2 + 3 + 4)/4
   
 - `User#is_dish_popular`
-  - returns `true` if dish has an average score above a 5, or `false` if the dish has an average score above 5
+  - returns `true` if dish has an average score above a 5, or `false` if the dish has an average score below 5
 
 
 #### User
@@ -245,7 +245,7 @@ dishes for the first user in the database based on your seed data; and
   - returns the dish instance that has the highest score from this user
 
 - `User#least_favorite_dish`
-  - returns the dish instance that has the highest score from this user
+  - returns the dish instance that has the lowest score from this user
 
 - `User#remove_ratings(dish)`
   - takes a `Dish` (an instance of the `Dish` class) and removes _all_ of this user's ratings for that dish
