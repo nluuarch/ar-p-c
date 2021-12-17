@@ -188,7 +188,7 @@ APPROPRIATE (i.e. `has_many`, `has_many through`, and `belongs_to`).
 - `Dish#ratings`
   - returns a collection of all the Ratings for the Dish
 - `Dish#users`
-  - returns a collection of all the Users who ratinged the Dish
+  - returns a collection of all the Users who rated the Dish
 
 
 #### User
@@ -196,7 +196,7 @@ APPROPRIATE (i.e. `has_many`, `has_many through`, and `belongs_to`).
 - `User#ratings`
   - returns a collection of all the Ratings that the User has given
 - `User#dishes`
-  - returns a collection of all the Dishs that the User has ratinged
+  - returns a collection of all the Dishes that the User has rated
 
 ❗️❗️❗️❗️
 
