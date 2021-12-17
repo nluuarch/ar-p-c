@@ -186,24 +186,24 @@ APPROPRIATE (i.e. `has_many`, `has_many through`, and `belongs_to`).
 #### Dish
 
 - `Dish#ratings`
-  - returns a collection of all the Ratings for the Dish
+  - returns a collection of all the `Rating`s for the Dish
 - `Dish#users`
-  - returns a collection of all the Users who rated the Dish
+  - returns a collection of all the `User`s who rated the Dish
 
 
 #### User
 
 - `User#ratings`
-  - returns a collection of all the Ratings that the User has given
+  - returns a collection of all the `Rating`s that the User has given
 - `User#dishes`
-  - returns a collection of all the Dishes that the User has rated
+  - returns a collection of all the `Dishe`s that the User has rated
 
 ❗️❗️❗️❗️
 
 Use `rake console` and check that these methods work before proceeding. For
 example, you should be able to call `User.first.dishes` and see a list of the
-dishes for the first user in the database based on your seed data; and
-`Rating.first.user` should return the user for the first rating in the database.
+`dishes` for the first `user` in the database based on your seed data; and
+`Rating.first.user` should return the `user` for the first `rating` in the database.
 
 ❗️❗️❗️❗️
 
@@ -221,14 +221,14 @@ dishes for the first user in the database based on your seed data; and
 #### Dish
 
 - `Dish#leave_rating(user, score, reason, recommended_price)`
-  - takes a `User` (an instance of the `User` class), a `score` (integer), and a `reason` (string) as arguments, and creates a new `Rating` in the database associated with this Dish and the User
+  - takes a `User` (an instance of the `User` class), a `score` (integer), a `reason` (string), and a `recommended_price` as arguments, and creates a new `Rating` in the database associated with this `Dish` and the `User`
 
 - `Dish#print_all_ratings`
-  - should `puts` to the terminal a string representing each rating for this dish
-  - each rating should be formatted as follows: `Rating for {insert dish name} by {insert user name}: {insert rating score}. Becuase, {insert rating reason}`
+  - should `puts` to the terminal a string representing each `rating` for this `dish`
+  - each `rating` should be formatted as follows: `Rating for {insert dish name} by {insert user name}: {insert rating score}. Becuase, {insert rating reason}`
 
 - `Dish#average_rating`
-  - returns a `float` representing the average star rating for all ratings for this dish
+  - returns a `float` representing the average `score` for all `rating`s for this `dish`
   - remember that the average of something is the sum of all the values, divided by the number of values:
     - the average of 1,1,1  : (1 + 1 + 1)/3
     - the average of 2,2,2  : (2 + 2 + 2)/3
@@ -236,20 +236,20 @@ dishes for the first user in the database based on your seed data; and
     - the average of 1,2,3,4: (1 + 2 + 3 + 4)/4
   
 - `Dish#is_dish_popular`
-  - returns `true` if dish has an average score above a 5, or `false` if the dish has an average score below 5
+  - returns `true` if `dish` has an average score above a 5, or `false` if the `dish` has an average score below 5
 
 
 #### User
 
 - `User#favorite_dish`
-  - returns the dish instance that has the highest score from this user
+  - returns the `dish` instance that has the highest `score` from this `user`
 
 - `User#least_favorite_dish`
-  - returns the dish instance that has the lowest score from this user
+  - returns the `dish` instance that has the lowest `score` from this `user`
 
 - `User#remove_ratings(dish)`
-  - takes a `Dish` (an instance of the `Dish` class) and removes _all_ of this user's ratings for that dish
-  - you will have to delete any rows from the `ratings` table associated with this user and the dish
+  - takes a `Dish` (an instance of the `Dish` class) and removes _all_ of this `user`'s `rating`s for that `dish`
+  - you will have to delete any rows from the `ratings` table associated with this `user` and the `dish`
 
 
 
